@@ -1,0 +1,449 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D916055417CC3D4F00005B9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D916055317CC3D4F00005B9E /* UIKit.framework */; };
+		D916055617CC3D4F00005B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D916055517CC3D4F00005B9E /* Foundation.framework */; };
+		D916055817CC3D4F00005B9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D916055717CC3D4F00005B9E /* CoreGraphics.framework */; };
+		D916055E17CC3D4F00005B9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D916055C17CC3D4F00005B9E /* InfoPlist.strings */; };
+		D916056017CC3D4F00005B9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D916055F17CC3D4F00005B9E /* main.m */; };
+		D916056417CC3D4F00005B9E /* DTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D916056317CC3D4F00005B9E /* DTAppDelegate.m */; };
+		D916056617CC3D4F00005B9E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D916056517CC3D4F00005B9E /* Default.png */; };
+		D916056817CC3D4F00005B9E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D916056717CC3D4F00005B9E /* Default@2x.png */; };
+		D916056A17CC3D4F00005B9E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D916056917CC3D4F00005B9E /* Default-568h@2x.png */; };
+		D916057217CC3D4F00005B9E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D916057117CC3D4F00005B9E /* SenTestingKit.framework */; };
+		D916057317CC3D4F00005B9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D916055317CC3D4F00005B9E /* UIKit.framework */; };
+		D916057417CC3D4F00005B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D916055517CC3D4F00005B9E /* Foundation.framework */; };
+		D916057C17CC3D4F00005B9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D916057A17CC3D4F00005B9E /* InfoPlist.strings */; };
+		D916057F17CC3D4F00005B9E /* Transfers_SchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D916057E17CC3D4F00005B9E /* Transfers_SchedulerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D916057517CC3D4F00005B9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D916054817CC3D4F00005B9E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D916054F17CC3D4F00005B9E;
+			remoteInfo = "Transfers Scheduler";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D916055017CC3D4F00005B9E /* Transfers Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Transfers Scheduler.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D916055317CC3D4F00005B9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D916055517CC3D4F00005B9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D916055717CC3D4F00005B9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D916055B17CC3D4F00005B9E /* Transfers Scheduler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Transfers Scheduler-Info.plist"; sourceTree = "<group>"; };
+		D916055D17CC3D4F00005B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D916055F17CC3D4F00005B9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D916056117CC3D4F00005B9E /* Transfers Scheduler-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Transfers Scheduler-Prefix.pch"; sourceTree = "<group>"; };
+		D916056217CC3D4F00005B9E /* DTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTAppDelegate.h; sourceTree = "<group>"; };
+		D916056317CC3D4F00005B9E /* DTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DTAppDelegate.m; sourceTree = "<group>"; };
+		D916056517CC3D4F00005B9E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D916056717CC3D4F00005B9E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D916056917CC3D4F00005B9E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D916057017CC3D4F00005B9E /* Transfers SchedulerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Transfers SchedulerTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D916057117CC3D4F00005B9E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		D916057917CC3D4F00005B9E /* Transfers SchedulerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Transfers SchedulerTests-Info.plist"; sourceTree = "<group>"; };
+		D916057B17CC3D4F00005B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D916057D17CC3D4F00005B9E /* Transfers_SchedulerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transfers_SchedulerTests.h; sourceTree = "<group>"; };
+		D916057E17CC3D4F00005B9E /* Transfers_SchedulerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transfers_SchedulerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D916054D17CC3D4F00005B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D916055417CC3D4F00005B9E /* UIKit.framework in Frameworks */,
+				D916055617CC3D4F00005B9E /* Foundation.framework in Frameworks */,
+				D916055817CC3D4F00005B9E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D916056C17CC3D4F00005B9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D916057217CC3D4F00005B9E /* SenTestingKit.framework in Frameworks */,
+				D916057317CC3D4F00005B9E /* UIKit.framework in Frameworks */,
+				D916057417CC3D4F00005B9E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D916054717CC3D4F00005B9E = {
+			isa = PBXGroup;
+			children = (
+				D916055917CC3D4F00005B9E /* Transfers Scheduler */,
+				D916057717CC3D4F00005B9E /* Transfers SchedulerTests */,
+				D916055217CC3D4F00005B9E /* Frameworks */,
+				D916055117CC3D4F00005B9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D916055117CC3D4F00005B9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D916055017CC3D4F00005B9E /* Transfers Scheduler.app */,
+				D916057017CC3D4F00005B9E /* Transfers SchedulerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D916055217CC3D4F00005B9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D916055317CC3D4F00005B9E /* UIKit.framework */,
+				D916055517CC3D4F00005B9E /* Foundation.framework */,
+				D916055717CC3D4F00005B9E /* CoreGraphics.framework */,
+				D916057117CC3D4F00005B9E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D916055917CC3D4F00005B9E /* Transfers Scheduler */ = {
+			isa = PBXGroup;
+			children = (
+				D916056217CC3D4F00005B9E /* DTAppDelegate.h */,
+				D916056317CC3D4F00005B9E /* DTAppDelegate.m */,
+				D916055A17CC3D4F00005B9E /* Supporting Files */,
+			);
+			path = "Transfers Scheduler";
+			sourceTree = "<group>";
+		};
+		D916055A17CC3D4F00005B9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D916055B17CC3D4F00005B9E /* Transfers Scheduler-Info.plist */,
+				D916055C17CC3D4F00005B9E /* InfoPlist.strings */,
+				D916055F17CC3D4F00005B9E /* main.m */,
+				D916056117CC3D4F00005B9E /* Transfers Scheduler-Prefix.pch */,
+				D916056517CC3D4F00005B9E /* Default.png */,
+				D916056717CC3D4F00005B9E /* Default@2x.png */,
+				D916056917CC3D4F00005B9E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D916057717CC3D4F00005B9E /* Transfers SchedulerTests */ = {
+			isa = PBXGroup;
+			children = (
+				D916057D17CC3D4F00005B9E /* Transfers_SchedulerTests.h */,
+				D916057E17CC3D4F00005B9E /* Transfers_SchedulerTests.m */,
+				D916057817CC3D4F00005B9E /* Supporting Files */,
+			);
+			path = "Transfers SchedulerTests";
+			sourceTree = "<group>";
+		};
+		D916057817CC3D4F00005B9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D916057917CC3D4F00005B9E /* Transfers SchedulerTests-Info.plist */,
+				D916057A17CC3D4F00005B9E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D916054F17CC3D4F00005B9E /* Transfers Scheduler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D916058217CC3D4F00005B9E /* Build configuration list for PBXNativeTarget "Transfers Scheduler" */;
+			buildPhases = (
+				D916054C17CC3D4F00005B9E /* Sources */,
+				D916054D17CC3D4F00005B9E /* Frameworks */,
+				D916054E17CC3D4F00005B9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Transfers Scheduler";
+			productName = "Transfers Scheduler";
+			productReference = D916055017CC3D4F00005B9E /* Transfers Scheduler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D916056F17CC3D4F00005B9E /* Transfers SchedulerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D916058517CC3D4F00005B9E /* Build configuration list for PBXNativeTarget "Transfers SchedulerTests" */;
+			buildPhases = (
+				D916056B17CC3D4F00005B9E /* Sources */,
+				D916056C17CC3D4F00005B9E /* Frameworks */,
+				D916056D17CC3D4F00005B9E /* Resources */,
+				D916056E17CC3D4F00005B9E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D916057617CC3D4F00005B9E /* PBXTargetDependency */,
+			);
+			name = "Transfers SchedulerTests";
+			productName = "Transfers SchedulerTests";
+			productReference = D916057017CC3D4F00005B9E /* Transfers SchedulerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D916054817CC3D4F00005B9E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DT;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Diogo Tridapalli";
+			};
+			buildConfigurationList = D916054B17CC3D4F00005B9E /* Build configuration list for PBXProject "Transfers Scheduler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D916054717CC3D4F00005B9E;
+			productRefGroup = D916055117CC3D4F00005B9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D916054F17CC3D4F00005B9E /* Transfers Scheduler */,
+				D916056F17CC3D4F00005B9E /* Transfers SchedulerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D916054E17CC3D4F00005B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D916055E17CC3D4F00005B9E /* InfoPlist.strings in Resources */,
+				D916056617CC3D4F00005B9E /* Default.png in Resources */,
+				D916056817CC3D4F00005B9E /* Default@2x.png in Resources */,
+				D916056A17CC3D4F00005B9E /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D916056D17CC3D4F00005B9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D916057C17CC3D4F00005B9E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D916056E17CC3D4F00005B9E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D916054C17CC3D4F00005B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D916056017CC3D4F00005B9E /* main.m in Sources */,
+				D916056417CC3D4F00005B9E /* DTAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D916056B17CC3D4F00005B9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D916057F17CC3D4F00005B9E /* Transfers_SchedulerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D916057617CC3D4F00005B9E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D916054F17CC3D4F00005B9E /* Transfers Scheduler */;
+			targetProxy = D916057517CC3D4F00005B9E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D916055C17CC3D4F00005B9E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D916055D17CC3D4F00005B9E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D916057A17CC3D4F00005B9E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D916057B17CC3D4F00005B9E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D916058017CC3D4F00005B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D916058117CC3D4F00005B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D916058317CC3D4F00005B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transfers Scheduler/Transfers Scheduler-Prefix.pch";
+				INFOPLIST_FILE = "Transfers Scheduler/Transfers Scheduler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D916058417CC3D4F00005B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transfers Scheduler/Transfers Scheduler-Prefix.pch";
+				INFOPLIST_FILE = "Transfers Scheduler/Transfers Scheduler-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D916058617CC3D4F00005B9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Transfers Scheduler.app/Transfers Scheduler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transfers Scheduler/Transfers Scheduler-Prefix.pch";
+				INFOPLIST_FILE = "Transfers SchedulerTests/Transfers SchedulerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		D916058717CC3D4F00005B9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Transfers Scheduler.app/Transfers Scheduler";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Transfers Scheduler/Transfers Scheduler-Prefix.pch";
+				INFOPLIST_FILE = "Transfers SchedulerTests/Transfers SchedulerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D916054B17CC3D4F00005B9E /* Build configuration list for PBXProject "Transfers Scheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D916058017CC3D4F00005B9E /* Debug */,
+				D916058117CC3D4F00005B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D916058217CC3D4F00005B9E /* Build configuration list for PBXNativeTarget "Transfers Scheduler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D916058317CC3D4F00005B9E /* Debug */,
+				D916058417CC3D4F00005B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D916058517CC3D4F00005B9E /* Build configuration list for PBXNativeTarget "Transfers SchedulerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D916058617CC3D4F00005B9E /* Debug */,
+				D916058717CC3D4F00005B9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D916054817CC3D4F00005B9E /* Project object */;
+}
