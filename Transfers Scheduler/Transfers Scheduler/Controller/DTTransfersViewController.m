@@ -59,26 +59,18 @@
                                                        action:@selector(addTransfer)];
 
     self.navigationItem.rightBarButtonItem = addButton;
+    [addButton release];
 }
 
 #pragma mark - 
 
 - (void)addTransfer
 {
-#warning TODO custom add
-    DTTransfer *tranfer = [[DTTransfer alloc] init];
-    tranfer.origin = @"12345-6";
-    tranfer.destination = @"23456-7";
-    tranfer.creationDate = [NSDate date];
-    tranfer.scheduledDate = [NSDate date];
-    tranfer.type = DTTransferTypeA;
-    tranfer.value = 15;
-
-    [self.transfers addObject:tranfer];
-
-    [tranfer release];
-
-    [self.tableView reloadData];
+    DTTransferDetailViewController *controller = [DTTransferDetailViewController editableViewControllerWithCompletionBlock:^(DTTransfer *transfer) {
+        [self.transfers addObject:transfer];
+        [self.tableView reloadData];
+    }];
+    [self.navigationController pushViewController:controller animated:YES];
 }
 
 - (void)removeTransferAtIndexPath:(NSIndexPath *)indexPath
@@ -148,10 +140,8 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    DTTransferDetailViewController *controller = [[DTTransferDetailViewController alloc] initWithNibName:@"DTTransferDetailViewController" bundle:nil];
-    controller.transfer = self.transfers[indexPath.row];
+    DTTransferDetailViewController *controller = [DTTransferDetailViewController viewControllerWithTransfer:self.transfers[indexPath.row]];
     [self.navigationController pushViewController:controller animated:YES];
-    [controller release];
 }
 
 @end

@@ -28,6 +28,8 @@
 		D91DFD2717CF0AA7007CE0CA /* DTTransfersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91DFD2517CF0AA7007CE0CA /* DTTransfersViewController.xib */; };
 		D91DFD3017CF13D0007CE0CA /* DTTransferDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D91DFD2E17CF13D0007CE0CA /* DTTransferDetailViewController.m */; };
 		D91DFD3117CF13D0007CE0CA /* DTTransferDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91DFD2F17CF13D0007CE0CA /* DTTransferDetailViewController.xib */; };
+		D929E41617D3B0350075E2F4 /* DTTypePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D929E41517D3B0350075E2F4 /* DTTypePickerView.m */; };
+		D9531DDB17CFFCB60059AC6D /* DTDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9531DDA17CFFCB60059AC6D /* DTDetailTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,10 @@
 		D91DFD2D17CF13D0007CE0CA /* DTTransferDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTTransferDetailViewController.h; path = Controller/DTTransferDetailViewController.h; sourceTree = "<group>"; };
 		D91DFD2E17CF13D0007CE0CA /* DTTransferDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTTransferDetailViewController.m; path = Controller/DTTransferDetailViewController.m; sourceTree = "<group>"; };
 		D91DFD2F17CF13D0007CE0CA /* DTTransferDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DTTransferDetailViewController.xib; path = Controller/DTTransferDetailViewController.xib; sourceTree = "<group>"; };
+		D929E41417D3B0350075E2F4 /* DTTypePickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTTypePickerView.h; path = View/DTTypePickerView.h; sourceTree = "<group>"; };
+		D929E41517D3B0350075E2F4 /* DTTypePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTTypePickerView.m; path = View/DTTypePickerView.m; sourceTree = "<group>"; };
+		D9531DD917CFFCB60059AC6D /* DTDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTDetailTableViewCell.h; path = View/DTDetailTableViewCell.h; sourceTree = "<group>"; };
+		D9531DDA17CFFCB60059AC6D /* DTDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTDetailTableViewCell.m; path = View/DTDetailTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 				D916056317CC3D4F00005B9E /* DTAppDelegate.m */,
 				D91DFD2217CF0A41007CE0CA /* Controller */,
 				D916058817CD74F000005B9E /* Model */,
+				D9531DD817CFFC620059AC6D /* View */,
 				D916055A17CC3D4F00005B9E /* Supporting Files */,
 			);
 			path = "Transfers Scheduler";
@@ -203,6 +210,17 @@
 				D91DFD2F17CF13D0007CE0CA /* DTTransferDetailViewController.xib */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		D9531DD817CFFC620059AC6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D9531DD917CFFCB60059AC6D /* DTDetailTableViewCell.h */,
+				D9531DDA17CFFCB60059AC6D /* DTDetailTableViewCell.m */,
+				D929E41417D3B0350075E2F4 /* DTTypePickerView.h */,
+				D929E41517D3B0350075E2F4 /* DTTypePickerView.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,6 +340,8 @@
 				D916058B17CD751D00005B9E /* DTTransfer.m in Sources */,
 				D91DFD2617CF0AA7007CE0CA /* DTTransfersViewController.m in Sources */,
 				D91DFD3017CF13D0007CE0CA /* DTTransferDetailViewController.m in Sources */,
+				D9531DDB17CFFCB60059AC6D /* DTDetailTableViewCell.m in Sources */,
+				D929E41617D3B0350075E2F4 /* DTTypePickerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

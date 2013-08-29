@@ -10,8 +10,11 @@
 
 @class DTTransfer;
 
-@interface DTTransferDetailViewController : UITableViewController
+@interface DTTransferDetailViewController : UITableViewController <UITextFieldDelegate>
 
 @property (nonatomic, strong) DTTransfer *transfer;
+
++ (instancetype)viewControllerWithTransfer:(DTTransfer *)tranfer;
++ (instancetype)editableViewControllerWithCompletionBlock:(void (^)(DTTransfer *transfer))block;
 
 @end
