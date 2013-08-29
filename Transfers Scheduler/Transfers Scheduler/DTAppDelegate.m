@@ -7,12 +7,13 @@
 //
 
 #import "DTAppDelegate.h"
+#import "DTTransfersViewController.h"
 
 @implementation DTAppDelegate
 
 - (void)dealloc
 {
-    [_window release];
+    [_window release], _window = nil;
     [super dealloc];
 }
 
@@ -21,6 +22,16 @@
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+
+    DTTransfersViewController *controller = [[DTTransfersViewController alloc]
+                                             initWithNibName:@"DTTransfersViewController"
+                                                      bundle:nil];
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:controller];
+    [controller release];
+
+    self.window.rootViewController = navController;
+    [navController release];
+
     [self.window makeKeyAndVisible];
     return YES;
 }
