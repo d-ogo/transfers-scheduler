@@ -21,6 +21,9 @@
 		D916057417CC3D4F00005B9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D916055517CC3D4F00005B9E /* Foundation.framework */; };
 		D916057C17CC3D4F00005B9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D916057A17CC3D4F00005B9E /* InfoPlist.strings */; };
 		D916057F17CC3D4F00005B9E /* Transfers_SchedulerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D916057E17CC3D4F00005B9E /* Transfers_SchedulerTests.m */; };
+		D916058B17CD751D00005B9E /* DTTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = D916058A17CD751D00005B9E /* DTTransfer.m */; };
+		D916058C17CD751D00005B9E /* DTTransfer.m in Sources */ = {isa = PBXBuildFile; fileRef = D916058A17CD751D00005B9E /* DTTransfer.m */; };
+		D916059117CD75FC00005B9E /* DTTransferTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D916059017CD75FC00005B9E /* DTTransferTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		D916057B17CC3D4F00005B9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D916057D17CC3D4F00005B9E /* Transfers_SchedulerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transfers_SchedulerTests.h; sourceTree = "<group>"; };
 		D916057E17CC3D4F00005B9E /* Transfers_SchedulerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transfers_SchedulerTests.m; sourceTree = "<group>"; };
+		D916058917CD751D00005B9E /* DTTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTTransfer.h; path = Model/DTTransfer.h; sourceTree = "<group>"; };
+		D916058A17CD751D00005B9E /* DTTransfer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTTransfer.m; path = Model/DTTransfer.m; sourceTree = "<group>"; };
+		D916058D17CD758E00005B9E /* DTTransfer_private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DTTransfer_private.h; path = Model/DTTransfer_private.h; sourceTree = "<group>"; };
+		D916058F17CD75FC00005B9E /* DTTransferTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTTransferTests.h; path = Model/DTTransferTests.h; sourceTree = "<group>"; };
+		D916059017CD75FC00005B9E /* DTTransferTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTTransferTests.m; path = Model/DTTransferTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,7 @@
 			children = (
 				D916056217CC3D4F00005B9E /* DTAppDelegate.h */,
 				D916056317CC3D4F00005B9E /* DTAppDelegate.m */,
+				D916058817CD74F000005B9E /* Model */,
 				D916055A17CC3D4F00005B9E /* Supporting Files */,
 			);
 			path = "Transfers Scheduler";
@@ -138,6 +147,7 @@
 			children = (
 				D916057D17CC3D4F00005B9E /* Transfers_SchedulerTests.h */,
 				D916057E17CC3D4F00005B9E /* Transfers_SchedulerTests.m */,
+				D916058E17CD75D800005B9E /* Model */,
 				D916057817CC3D4F00005B9E /* Supporting Files */,
 			);
 			path = "Transfers SchedulerTests";
@@ -150,6 +160,25 @@
 				D916057A17CC3D4F00005B9E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D916058817CD74F000005B9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D916058917CD751D00005B9E /* DTTransfer.h */,
+				D916058D17CD758E00005B9E /* DTTransfer_private.h */,
+				D916058A17CD751D00005B9E /* DTTransfer.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D916058E17CD75D800005B9E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D916058F17CD75FC00005B9E /* DTTransferTests.h */,
+				D916059017CD75FC00005B9E /* DTTransferTests.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,6 +293,7 @@
 			files = (
 				D916056017CC3D4F00005B9E /* main.m in Sources */,
 				D916056417CC3D4F00005B9E /* DTAppDelegate.m in Sources */,
+				D916058B17CD751D00005B9E /* DTTransfer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +302,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D916057F17CC3D4F00005B9E /* Transfers_SchedulerTests.m in Sources */,
+				D916058C17CD751D00005B9E /* DTTransfer.m in Sources */,
+				D916059117CD75FC00005B9E /* DTTransferTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
