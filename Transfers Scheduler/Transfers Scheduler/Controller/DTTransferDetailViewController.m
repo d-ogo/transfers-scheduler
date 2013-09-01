@@ -9,6 +9,7 @@
 #import "DTTransferDetailViewController.h"
 #import "DTDetailTableViewCell.h"
 #import "DTTypePickerView.h"
+#import "DTFormatter.h"
 #import "DTTransfer.h"
 
 typedef NS_ENUM(NSInteger, DTTransferDetailSection) {
@@ -41,8 +42,8 @@ static NSString *const DTTransferCellIdentifierCellIdentifierNone = @"None";
 @property (atomic, assign) UITextField *textFieldValue;
 @property (atomic, assign) UITextField *textFieldTax;
 
-@property (nonatomic, strong) NSNumberFormatter *numberFormatter;
-@property (nonatomic, strong) NSDateFormatter *dateFormatter;
+@property (nonatomic, assign) NSNumberFormatter *numberFormatter;
+@property (nonatomic, assign) NSDateFormatter *dateFormatter;
 
 
 @end
@@ -97,14 +98,8 @@ static NSString *const DTTransferCellIdentifierCellIdentifierNone = @"None";
 {
     [super viewDidLoad];
 
-    self.numberFormatter = [[[NSNumberFormatter alloc] init] autorelease];
-    [self.numberFormatter setNumberStyle: NSNumberFormatterCurrencyStyle];
-//    [self.numberFormatter setMaximumFractionDigits:2];
-
-    self.dateFormatter = [[[NSDateFormatter alloc] init] autorelease];
-    [self.dateFormatter setLocale:[NSLocale currentLocale]];
-    [self.dateFormatter setDateStyle:NSDateFormatterLongStyle];
-    [self.dateFormatter setTimeStyle:NSDateFormatterNoStyle];
+    self.numberFormatter = [DTFormatter numberFormatter];
+    self.dateFormatter = [DTFormatter dateFormatter];
 
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
                                    initWithTarget:self action:@selector(tapOnTableView:)];

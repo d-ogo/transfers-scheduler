@@ -8,6 +8,7 @@
 
 #import "DTTransfersViewController.h"
 #import "DTTransferDetailViewController.h"
+#import "DTFormatter.h"
 #import "DTTransfer.h"
 
 @interface DTTransfersViewController ()
@@ -50,6 +51,8 @@
     self.title = @"Transfers";
 
     _transfers = [[NSMutableArray alloc] initWithCapacity:10];
+
+#warning TODO storage
 
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
@@ -102,9 +105,8 @@
 
     DTTransfer *transfer = self.transfers[indexPath.row];
 
-#warning TODO custom cell
-    cell.textLabel.text = [transfer.scheduledDate description];
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"$ %.2f", transfer.value];
+    cell.textLabel.text =  [[DTFormatter dateFormatter] stringFromDate:transfer.scheduledDate];
+    cell.detailTextLabel.text = [[DTFormatter numberFormatter] stringFromNumber:[NSNumber numberWithDouble:transfer.value]];
     return cell;
 }
 
