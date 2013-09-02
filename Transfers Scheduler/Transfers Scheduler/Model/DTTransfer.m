@@ -8,9 +8,42 @@
 
 #import "DTTransfer_private.h"
 
+
+
+static NSString *const DTTransferKeyOrigin = @"origin";
+static NSString *const DTTransferKeyDestination = @"destination";
+static NSString *const DTTransferKeyCreation = @"creation";
+static NSString *const DTTransferKeyScheduled = @"scheduled";
+static NSString *const DTTransferKeyType = @"type";
+static NSString *const DTTransferKeyValue = @"value";
+
 @implementation DTTransfer
 
 #pragma mark - memory management
+
+- (id)initWithCoder:(NSCoder *)aDecoder
+{
+    if (self = [self init]) {
+        _origin = [[aDecoder decodeObjectForKey:DTTransferKeyOrigin] retain];
+        _destination = [[aDecoder decodeObjectForKey:DTTransferKeyDestination] retain];
+        _creationDate = [[aDecoder decodeObjectForKey:DTTransferKeyCreation] retain];
+        _scheduledDate = [[aDecoder decodeObjectForKey:DTTransferKeyScheduled] retain];
+        _type = [aDecoder decodeIntegerForKey:DTTransferKeyType];
+        _value = [aDecoder decodeDoubleForKey:DTTransferKeyValue];
+    }
+
+    return self;
+}
+
+- (void)encodeWithCoder:(NSCoder *)aCoder
+{
+    [aCoder encodeObject:self.origin forKey:DTTransferKeyOrigin];
+    [aCoder encodeObject:self.destination forKey:DTTransferKeyDestination];
+    [aCoder encodeObject:self.creationDate forKey:DTTransferKeyCreation];
+    [aCoder encodeObject:self.scheduledDate forKey:DTTransferKeyScheduled];
+    [aCoder encodeInteger:self.type forKey:DTTransferKeyType];
+    [aCoder encodeDouble:self.value forKey:DTTransferKeyValue];
+}
 
 - (void)dealloc
 {

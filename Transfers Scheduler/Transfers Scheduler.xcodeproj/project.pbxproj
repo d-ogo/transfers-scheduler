@@ -30,6 +30,7 @@
 		D91DFD3117CF13D0007CE0CA /* DTTransferDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91DFD2F17CF13D0007CE0CA /* DTTransferDetailViewController.xib */; };
 		D929E41617D3B0350075E2F4 /* DTTypePickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D929E41517D3B0350075E2F4 /* DTTypePickerView.m */; };
 		D92B372D17D3F90300D389BE /* DTFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = D92B372C17D3F90300D389BE /* DTFormatter.m */; };
+		D92B373117D4386200D389BE /* DTTransfersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D92B373017D4386200D389BE /* DTTransfersManager.m */; };
 		D9531DDB17CFFCB60059AC6D /* DTDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D9531DDA17CFFCB60059AC6D /* DTDetailTableViewCell.m */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,9 @@
 		D929E41517D3B0350075E2F4 /* DTTypePickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTTypePickerView.m; path = View/DTTypePickerView.m; sourceTree = "<group>"; };
 		D92B372B17D3F90300D389BE /* DTFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTFormatter.h; path = Model/DTFormatter.h; sourceTree = "<group>"; };
 		D92B372C17D3F90300D389BE /* DTFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTFormatter.m; path = Model/DTFormatter.m; sourceTree = "<group>"; };
+		D92B372E17D436E000D389BE /* DTMacros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DTMacros.h; sourceTree = "<group>"; };
+		D92B372F17D4386200D389BE /* DTTransfersManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTTransfersManager.h; path = Model/DTTransfersManager.h; sourceTree = "<group>"; };
+		D92B373017D4386200D389BE /* DTTransfersManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTTransfersManager.m; path = Model/DTTransfersManager.m; sourceTree = "<group>"; };
 		D9531DD917CFFCB60059AC6D /* DTDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DTDetailTableViewCell.h; path = View/DTDetailTableViewCell.h; sourceTree = "<group>"; };
 		D9531DDA17CFFCB60059AC6D /* DTDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DTDetailTableViewCell.m; path = View/DTDetailTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -159,6 +163,7 @@
 				D916056517CC3D4F00005B9E /* Default.png */,
 				D916056717CC3D4F00005B9E /* Default@2x.png */,
 				D916056917CC3D4F00005B9E /* Default-568h@2x.png */,
+				D92B372E17D436E000D389BE /* DTMacros.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -186,6 +191,8 @@
 		D916058817CD74F000005B9E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D92B372F17D4386200D389BE /* DTTransfersManager.h */,
+				D92B373017D4386200D389BE /* DTTransfersManager.m */,
 				D916058917CD751D00005B9E /* DTTransfer.h */,
 				D916058D17CD758E00005B9E /* DTTransfer_private.h */,
 				D916058A17CD751D00005B9E /* DTTransfer.m */,
@@ -348,6 +355,7 @@
 				D9531DDB17CFFCB60059AC6D /* DTDetailTableViewCell.m in Sources */,
 				D929E41617D3B0350075E2F4 /* DTTypePickerView.m in Sources */,
 				D92B372D17D3F90300D389BE /* DTFormatter.m in Sources */,
+				D92B373117D4386200D389BE /* DTTransfersManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

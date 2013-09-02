@@ -9,7 +9,10 @@
 #import "DTTransfersViewController.h"
 #import "DTTransferDetailViewController.h"
 #import "DTFormatter.h"
+#import "DTTransfersManager.h"
 #import "DTTransfer.h"
+
+
 
 @interface DTTransfersViewController ()
 
@@ -42,17 +45,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - view management
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
     self.title = @"Transfers";
 
-    _transfers = [[NSMutableArray alloc] initWithCapacity:10];
-
-#warning TODO storage
+    DTTransfersManager *manager = [DTTransfersManager sharedManager];
+    _transfers = [[NSMutableArray arrayWithArray:[manager loadTransfers]] retain];
 
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
@@ -65,22 +65,29 @@
     [addButton release];
 }
 
-#pragma mark - 
+#pragma mark - transfers managing
 
 - (void)addTransfer
 {
     DTTransferDetailViewController *controller = [DTTransferDetailViewController editableViewControllerWithCompletionBlock:^(DTTransfer *transfer) {
         [self.transfers addObject:transfer];
         [self.tableView reloadData];
+        [self saveTransfers];
     }];
     [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)saveTransfers
+{
+    DTTransfersManager *manager = [DTTransfersManager sharedManager];
+    [manager saveTransfers:self.transfers];
 }
 
 - (void)removeTransferAtIndexPath:(NSIndexPath *)indexPath
 {
     NSInteger row = indexPath.row;
-
     [self.transfers removeObjectAtIndex:row];
+    [self saveTransfers];
 }
 
 #pragma mark - Table view data source

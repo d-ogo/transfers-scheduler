@@ -16,7 +16,7 @@ typedef NS_ENUM(NSUInteger, DTTransferType) {
     DTTransferTypeD
 };
 
-@interface DTTransfer : NSObject
+@interface DTTransfer : NSObject <NSCoding>
 
 @property (nonatomic, strong) NSString *origin;
 @property (nonatomic, strong) NSString *destination;

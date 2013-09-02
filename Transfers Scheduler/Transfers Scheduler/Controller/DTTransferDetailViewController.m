@@ -42,8 +42,8 @@ static NSString *const DTTransferCellIdentifierCellIdentifierNone = @"None";
 @property (atomic, assign) UITextField *textFieldValue;
 @property (atomic, assign) UITextField *textFieldTax;
 
-@property (nonatomic, assign) NSNumberFormatter *numberFormatter;
-@property (nonatomic, assign) NSDateFormatter *dateFormatter;
+@property (nonatomic, strong) NSNumberFormatter *numberFormatter;
+@property (nonatomic, strong) NSDateFormatter *dateFormatter;
 
 
 @end
@@ -117,6 +117,7 @@ static NSString *const DTTransferCellIdentifierCellIdentifierNone = @"None";
     }
 }
 
+#pragma mark - save validations
 
 - (void)saveAndPop
 {
@@ -187,13 +188,6 @@ static NSString *const DTTransferCellIdentifierCellIdentifierNone = @"None";
 - (BOOL)valueIsValid
 {
     return (self.transfer.value > 0.0);
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-
-
 }
 
 #pragma mark - Table view data source
